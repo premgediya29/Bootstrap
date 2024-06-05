@@ -1,0 +1,395 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: rgb(255,140,92);
+}
+.nav-item{
+    padding-left: 30px;
+}
+.portion1{
+    width: 100%;
+    height: 700px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(img/h1_hero.png);
+}
+.portion1 .child1{
+    flex-basis: 30%;
+    height: 300px;
+    /* border: 1px solid black; */
+    margin-top: 200px;
+    margin-left: 10%;
+}
+.portion1 .child1 img{
+    width: 100%;
+    height: 100%;
+}
+.portion1 .child{
+    flex-basis: 50%;
+    /* border: 1px solid black; */
+    height: 300px;
+    margin-top: 200px;
+}
+.portion1 .parent{
+    flex-basis: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.portion1 .parent .design{
+    flex-basis: 33%;
+    height: 200px;
+    /* border: 1px solid black; */
+}
+.portion1 .parent .design .text-light{
+    font-size: 30px;
+}
+.portion1 .parent  .text-center{
+    margin-left: 90px;
+}
+
+.portion2{
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.portion2 .child{
+    flex-basis: 35%;
+    height: 250px;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+
+}
+.portion2 div h2{
+    margin-top: 30px;
+    padding-left: 40px;
+}
+.portion2 div p{
+    margin-top: 30px;
+    padding-left: 40px;
+}
+.portion3{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.portion3 .about{
+    flex-basis: 30%;
+    height: 400px;
+    /* border: 1px solid black; */
+}
+.portion3 .about img{
+    width: 100%;
+    height: 100%;
+}
+.portion3 .graph{
+    flex-basis: 40%;
+    height: 400px;
+    /* border: 1px solid black; */
+}
+.portion4{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+.bi{
+    font-size: 25px;
+    color: orange;
+    cursor: pointer;
+    transition: 1s;
+}
+.bi:hover{
+    font-size: 35px;
+}
+.btn:hover{
+    transition: 2s;
+    padding: 10px 20px;
+    background-color: coral;
+}
+.con{
+    margin-top: 100px;
+}
+.test1{
+    height: 500px;
+    border: 1px solid black;
+    background :rgba(0,0,0,0.6)url(img/prem.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: 100% 50%;
+}
+.test-right{
+    width: 400px;
+    margin-left: 60%;
+    margin-top: 130px;
+}
+.clint{
+    height: 300px;
+    background: rgba(0, 0, 0,0.5)url(../img/men-7834548_1280.jpg);
+    background-blend-mode: darken;
+    background-position: 100% 45%;
+    background-repeat: no-repeat;
+}
+.project{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.project .pimg{
+    flex-basis: 30%;
+    height: 350px;
+    margin: 10px;
+}
+.project .pimg img{
+    width: 100%;
+    height: 100%;
+}
+.project .pimg img:hover{
+    opacity: 0.8;
+}
+
+.pg7{
+    width: 100%;
+    height: 550px;
+    /* border: 1px solid black; */
+    background-color: rgb(255,140,92);
+    margin-top: 50px;
+}
+.carousel{
+    height: 550px;
+    
+}
+.carousel-inner{
+    height: inherit;
+    align-items: center;
+}
+.carousel-item{
+    height: inherit;
+}
+img{
+    height: 100%;
+}
+
+.pg6{
+    width: 100%;
+    height: 700px;
+    /* border: 1px solid black; */
+}
+.btn{
+    transition: 2s;
+}
+.btn:hover{
+    background-color:chocolate;
+    color: white;
+}
+
+
+.contactform{
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid black; */
+    
+}
+
+
+.footer{
+    height: 300px;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255,140,92);
+}
+.footer .foo{
+    flex-basis: 20%;
+    height: 300px;
+    /* border: 1px solid black; */
+}
+.footer .foo a{
+    text-decoration: none;
+    color: white;
+}
+.footer .foo h4{
+    padding-top: 80px;
+}
+
+@media(max-width:992px)
+{
+    .portion1{
+        height: auto;
+        flex-direction: column;
+    }
+    .portion1 .child1{
+        margin-right: 50px;
+    }
+    .portion1 .parent{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portion1 .parent .design h1{
+        margin-left: 20px;
+    }
+    .portion1 .parent .design h4{
+        margin-left: 20px;
+    }
+    .portion1 .parent .design a{
+        margin-left: 20px;
+    }
+    .portion2{
+        height: auto;
+        flex-direction: column;
+    }
+    .portion2 .child{
+        margin: 10px;
+    }
+    .portion3{
+        height: auto;
+        flex-direction: column;
+    }
+    .portion3 .about{
+        margin: 20px;
+    }
+    .project{
+        height: auto;
+        flex-direction: column;
+    }
+    .project .pimg{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+    .pg6{
+        height: auto;
+    }
+    .footer{
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:768px)
+{
+    .portion1{
+        height: auto;
+        flex-direction: column;
+    }
+    .portion1 .child1{
+        margin-right: 50px;
+    }
+    .portion1 .parent{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portion1 .parent .design h1{
+        margin-left: 20px;
+    }
+    .portion1 .parent .design h4{
+        margin-left: 20px;
+    }
+    .portion1 .parent .design a{
+        margin-left: 20px;
+    }
+    .portion2{
+        height: auto;
+        flex-direction: column;
+    }
+    .portion2 .child{
+        margin: 10px;
+    }
+    .portion3{
+        height: auto;
+        flex-direction: column;
+    }
+    .portion3 .about{
+        margin: 20px;
+    }
+    .project{
+        height: auto;
+        flex-direction: column;
+    }
+    .project .pimg{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+    .pg6{
+        height: auto;
+    }
+    .footer{
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media(max-width:576px)
+{
+    .portion1{
+        height: auto;
+        flex-direction: column;
+    }
+    .portion1 .child1{
+        margin-right: 50px;
+    }
+    .portion1 .parent{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portion1 .parent .design h1{
+        margin-left: 20px;
+    }
+    .portion1 .parent .design h4{
+        margin-left: 20px;
+    }
+    .portion1 .parent .design a{
+        margin-left: 20px;
+    }
+    .portion2{
+        height: auto;
+        flex-direction: column;
+    }
+    .portion2 .child{
+        margin: 10px;
+    }
+    .portion3{
+        height: auto;
+        flex-direction: column;
+    }
+    .portion3 .about{
+        margin: 20px;
+    }
+    .project{
+        height: auto;
+        flex-direction: column;
+    }
+    .project .pimg{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+    .pg6{
+        height: auto;
+    }
+    .footer{
+        height: auto;
+        flex-direction: column;
+    }
+}
