@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.navbar .container-fluid img{
+    margin-left: 50px;
+}
+.navbar .nav-link{
+    margin-left: 35px;
+}
+.navbar .bi{
+    margin-left: 35px;
+    font-size: 25px;
+}
+.navbar a{
+    color: black;
+}
+img{
+    width: 80px;
+    height: 60px;
+}
